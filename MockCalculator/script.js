@@ -17,13 +17,17 @@ function mockCalculator() {
             result = userInput1 * userInput2;
             break;
         case "/":
-            result = userInput1 / userInput2;
+            if (userInput2 !== 0) {
+                result = userInput1 / userInput2;
+            } else {
+                alert("Sorry! Can't Divide by Zero")
+            }
             break;
         case "%":
             result = userInput1 % userInput2;
             break;
         default:
-            result = "Invalid Choice"
+            result = "Invalid Operator , Choose one of(+,-,*,/,%)"
     }
     alert(result);
 
