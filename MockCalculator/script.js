@@ -21,6 +21,7 @@ function mockCalculator() {
                 result = userInput1 / userInput2;
             } else {
                 alert("Sorry! Can't Divide by Zero")
+                return
             }
             break;
         case "%":
