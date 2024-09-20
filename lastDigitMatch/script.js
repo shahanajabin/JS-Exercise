@@ -6,11 +6,6 @@ let num3 = prompt("Enter The Third Number.");
 
 function lastDigitMatch() {
 
-
-    // console.log(num1lst);
-    // console.log(num2lst);
-    // console.log(num3lst);
-
     if (num1 > 0 && num2 > 0 && num3 > 0) {
         let num1lst = num1[num1.length - 1];
         let num2lst = num2[num2.length - 1];
