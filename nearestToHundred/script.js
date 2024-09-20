@@ -1,4 +1,4 @@
-// Find a value which is nearest to 100 from two different given integer values
+// Find a value which is nearest to 100 from two different given integer values.
 
 let input1 = parseInt(prompt('Enter The First Number'));
 let input2 = parseInt(prompt('Enter The Second Number'));
