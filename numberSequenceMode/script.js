@@ -1,4 +1,3 @@
-// NumberSequenceMode
 // check whether three given numbers are increasing in strict mode or in soft mode.
 
 let num1 = parseInt(prompt("Enter the First Number."))
