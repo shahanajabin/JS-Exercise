@@ -1,17 +1,17 @@
-//  Convert a given number to hours and minutes. 
+//  Convert a given number to hours and minutes.
 
 let number = parseInt(prompt('Enter the time to Convert in hours and minutes'));
 
 function convertTohours() {
 
-
-    if (number % 60 == 0) {
-        alert(`${hour} hours`)
+    if (!isNaN(number)) {
+        let hours = Math.floor(number / 60);
+        let minutes = number % 60;
+        let time = `${hours} Hours and ${minutes} Minutes.`
+        alert(time)
     } else {
-        alert(false)
+        alert('Please, Enter a Number!')
     }
-    // let hour = number / 60;
-    // let minute = parseFloat(number / 60);
-    // alert(hour);
-    // alert(minute);
+
 } convertTohours()
+
