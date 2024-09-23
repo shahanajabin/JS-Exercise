@@ -11,7 +11,5 @@ function alphabetizeString() {
         alert('Please, Enter a String.')
     }
 
-
-
 } alphabetizeString()
 
