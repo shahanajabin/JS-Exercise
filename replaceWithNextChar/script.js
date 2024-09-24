@@ -1,13 +1,15 @@
 // Replace every character in a given string with the character following it in the alphabet.
 
-// let string = prompt("Enter a String!");
+let string = prompt("Enter a String!");
 
-function capitalizeWords(string) {
+function replaceWithNextChar() {
 
     let newString = '';
     for (let i = 0; i < string.length; i++) {
-        console.log(string[i]);
-
+        newString += String.fromCharCode(string.charCodeAt(i) + 1);
     }
+    alert(newString)
+} replaceWithNextChar()
 
-} capitalizeWords('hey')
+
+
