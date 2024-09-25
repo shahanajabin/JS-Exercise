@@ -11,6 +11,6 @@ function removeChar() {
             newArray += string[i]
         }
     }
-    console.log(newArray);
+    alert(newArray);
 
 } removeChar()
