@@ -15,10 +15,12 @@ function diagonalMatrixCheck(array) {
                 if (i == j) {
                     if (matrix[j] == 0) {
                         diagonal = false;
+                        break
                     }
                 } else {
                     if (matrix[j] !== 0) {
                         diagonal = false
+                        break
                     }
                 }
 
