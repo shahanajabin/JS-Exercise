@@ -1,6 +1,8 @@
 // calculate the sum of n + n/2 + n/4 + n/8 + .... where n is a positive integer.
 
-function sumSequence(number) {
+letnumber = prompt('Enter a Number.')
+
+function sumSequence() {
 
     let sum = 0;
 
@@ -9,6 +11,6 @@ function sumSequence(number) {
         number = Math.floor(number / 2);
 
     }
-    console.log(sum);
+    alert(sum);
 }
-sumSequence(9)
+sumSequence()
