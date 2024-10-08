@@ -7,28 +7,33 @@ let secondArray = secondNumber.split(",");
 
 function similarArrays() {
 
-    let similiar = false;
-    if (firstArray.length == secondArray.length) {
+    let identical = true;
+    let similiar = true;
+    let count = 1;
+
+    if (firstArray.length === secondArray.length) {
 
         for (let i = 0; i < firstArray.length; i++) {
-            for (let j = 0; j < secondArray.length; j++) {
-                if (firstArray[i] === secondArray[j]) {
-                    similiar = true;
+            if (firstArray[i] !== secondArray[i]) {
+                identical = false;
+                if (count) {
+                    [firstArray[i], firstArray[i + 1]] = [firstArray[i + 1], firstArray[i]];
+                    count--;
                 } else {
                     similiar = false;
                 }
             }
         }
-        if (similiar == true) {
-            alert('These Array\'s are Similiar!');
-
+        if (identical) {
+            alert('These Array\'s are identical.');
+        } else if (similiar) {
+            alert('These Array\'s are Similiar.');
         } else {
-            alert('These Array\'s are Not Similiar ');
-
+            alert('These Array\'s are Not Similiar.');
         }
 
     } else {
-        alert(`Length of 2 Array's are Not Equal so They are Not Similiar Array's!`);
+        alert('The length of the Array\'s are not Equal.');
 
     }
 
