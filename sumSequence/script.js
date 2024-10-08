@@ -1,6 +1,6 @@
 // calculate the sum of n + n/2 + n/4 + n/8 + .... where n is a positive integer.
 
-letnumber = prompt('Enter a Number.')
+let number = parseInt(prompt('Enter a Number.'));
 
 function sumSequence() {
 
